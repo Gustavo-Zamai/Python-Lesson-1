@@ -1,5 +1,5 @@
 class Clients:
-  def __init__(self, name, email, plan, payment):
+  def __init__(self, name, email, payment, plan):
     self.name = name
     self.email = email
     self.payment = payment
@@ -15,8 +15,8 @@ class Clients:
     else:
       print ("Invalid Plan")
 
-
-
-    
+client = Clients("Gus","gus@gmail.com", "Credit Card", "Basic")
+client.change_plan("Premium")
+print(client.name, client.email, client.payment, client.plan)   
 
 
